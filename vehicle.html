@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./styling.css">
+	<link rel="stylesheet" href="./css/all.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<title>TopPer's Book</title>
+</head>
+<body>
+	<div class="navBar">
+		<div class="logo">
+			<i class="fas fa-book"><span style="font-family: 'Goldman', cursive;"> TopPerS</span></i>
+		</div>
+
+		<div class="options">
+			<ul>
+				<li><a href="#" onclick="home()">Home</a></li>
+				<li><a href="#" onclick="tenWorld()">Top 10 World</a></li>
+				<li><a href="#" onclick="fiveIndian()">Top 5 Indian</a></li>
+				<li><a href="#" onclick="aboutMe()">About Me</a></li>
+			</ul>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+		<div class="menu-btn">
+			<div id="ham-bars">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div id="open">
+				<ul>
+					<li><a href="#" onclick="home()">Home</a></li>
+					<li><a href="#" onclick="tenWorld()">Top 10 World</a></li>
+					<li><a href="#" onclick="fiveIndian()">Top 5 Indian</a></li>
+					<li><a href="#" onclick="aboutMe()">About Me</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="first-background">
+		<h1>Best Seller's</h1>
+		<p>
+			<i class="fas fa-quote-left" id="left-quote"></i><br>
+			"Made weak by time and fate, but strong in will
+			To strive, to seek, to find, and not to yield." 
+			- Alfred Lord Tennyson
+			<br><i class="fas fa-quote-right" id="right-quote"></i>
+		</p>
+    </div>
+	<!--*******************SLIDER*******************-->
+	<h2 style="text-align: center; font-size: 30px; margin-top: 20px; text-decoration: underline; font-family: 'Lobster', cursive;">Top 10 Best Seller Book's of All Time</h2>
+	<div class="book-slider">
+		<div class="card">
+			<div class="slider">
+				<div class="item item1">
+					<div class="item-inner">
+						<img src="https://m.media-amazon.com/images/I/41RrI0dPBBL.jpg" alt="">
+						<h4>1. Don Quixote</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">It is a spanish novel and was first published in 1612 and since then, the book has sold 500 million copies worldwide.
+							Originally it was seen as a parody of the chivalric romances.
+						</p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Don-Quixote-Miguel-Cervantes-ebook/dp/B0771SM4L9" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item2">
+					<div class="item-inner">
+						<img src="https://m.media-amazon.com/images/I/41jeFwdeF9L.jpg" alt="">
+						<h4>2. A Tale of Two Cities</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">A Tale of Two Cities is an 1859 historical novel by Charles Dickens, set in London and Paris before and during 
+							the French Revolution.
+						</p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Tale-Two-Cities-Charles-Dickens-ebook/dp/B00KWPSNCA" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item3">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/51EstVXM1UL._SX331_BO1,204,203,200_.jpg" alt="">
+						<h4>3. The Lord of the Rings</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">This has converted the book into a multi-million dollar earning movie series with the same name. The Hobbit, 
+							which was at number 7 in the list, is the pre-equal of Lord of the Rings.</p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Lord-Rings-J-R-Tolkien/dp/0544003411" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item4">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/4186P0mACWL._SX336_BO1,204,203,200_.jpg" alt="">
+						<h4>4. The Little Prince</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">This is a novella by French aristocrat, writer, and aviator Antoine de Saint-Exupéry. It was first 
+							published in English and French in the US by Reynal & Hitchcock in April 1943. The book has been translated into 
+							300 languages and dialects. It sells 1-2 million copies worldwide every year.
+						</p>
+						<div class="book-link">
+							<a href="https://www.amazon.com/Little-Prince-Antoine-Saint-Exup%C3%A9ry/dp/0156012197" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item5">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/51ifu1aebKL._SX332_BO1,204,203,200_.jpg" alt="">
+						<h4>5. Harry Potter and the Philosopher's Stone</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">The book was first published in the United Kingdom on 26 June 1997.The book has been translated into 80 languages 
+							and has been made into an 8 part series films, the books in themselves have sold more than 500 million copies.
+						</p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Harry-Potter-Philosophers-Childrens-Hardcover/dp/1408855895" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item6">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/51MlxNgCsyL._SX308_BO1,204,203,200_.jpg" alt="">
+						<h4>6. And Then There Were None</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">The book was first published in 1939, and since then it has been seen as one of the best thriller novels of all time.
+						</p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Then-There-Were-None/dp/0062073486" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item7">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/61KGgzdkCYL._SX338_BO1,204,203,200_.jpg" alt="">
+						<h4>7. The Hobbit</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">This was originally published in 1937  by J. R. R. Tolkien. It was nominated for the Carnegie Medal and 
+							awarded a prize from the New York Herald Tribune for best juvenile fiction. </p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Hobbit-Classic-Hardback-J-Tolkien/dp/0261103288" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item8">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/51Dp6aAR4HL._SX357_BO1,204,203,200_.jpg" alt="">
+						<h4>8. Alice's Adventures in Wonderland</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">The book was first published in 1865, and since then it has sold 100 million copies worldwide. The book has 
+							been made into several blockbuster films, animated films, and cartoon series.</p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Alices-Adventures-Wonderland-Lewis-Carroll/dp/0141361344" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item9">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/614469ES26L._SX340_BO1,204,203,200_.jpg" alt="">
+						<h4>9. The Lion, The Witch, and the Wardrobe</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">This book was first published in 1950 and has sold 85 million copies worldwide. The book is the first part of 
+							the 7 books' series and has also been made into blockbuster film with the title 'The Chronicles of Narnia: 
+							The Lion, The Witch and the Wardrobe.
+						</p>
+						<div class="book-link">
+							<a href="https://www.amazon.in/Lion-Witch-Wardrobe-Graphic-Chronicles/dp/0064433994" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item10">
+					<div class="item-inner">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/81Ccf2K0axL.jpg" alt="">
+						<h4>10. She: A History of Adventure</h4>
+						<button class="infoBtn">i</button>
+						<p class="infoPara">This book was first published in 1887 and has sold 83 million copies worldwide.
+						</p>
+						<div class="book-link">
+							<a href="https://www.amazon.com/She-History-Adventure-Classic-Reprint/dp/133371114X" target="_blank">Order Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://m.media-amazon.com/images/I/41RrI0dPBBL.jpg" alt="">
+					<h4>1. Don Quixote</h4>
+					<p class="infoPara">It is a spanish novel and was first published in 1612 and since then, the book has sold 500 million copies worldwide.
+						Originally it was seen as a parody of the chivalric romances.
+					</p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Don-Quixote-Miguel-Cervantes-ebook/dp/B0771SM4L9" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://m.media-amazon.com/images/I/41jeFwdeF9L.jpg" alt="">
+					<h4>2. A Tale of Two Cities</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">A Tale of Two Cities is an 1859 historical novel by Charles Dickens, set in London and Paris before and during 
+						the French Revolution.
+					</p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Tale-Two-Cities-Charles-Dickens-ebook/dp/B00KWPSNCA" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/51EstVXM1UL._SX331_BO1,204,203,200_.jpg" alt="">
+					<h4>3. The Lord of the Rings</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">This has converted the book into a multi-million dollar earning movie series with the same name. The Hobbit, 
+						which was at number 7 in the list, is the pre-equal of Lord of the Rings.</p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Lord-Rings-J-R-Tolkien/dp/0544003411" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/4186P0mACWL._SX336_BO1,204,203,200_.jpg" alt="">
+					<h4>4. The Little Prince</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">This is a novella by French aristocrat, writer, and aviator Antoine de Saint-Exupéry. It was first 
+						published in English and French in the US by Reynal & Hitchcock in April 1943. The book has been translated into 
+						300 languages and dialects. It sells 1-2 million copies worldwide every year.
+					</p>
+					<div class="book-link">
+						<a href="https://www.amazon.com/Little-Prince-Antoine-Saint-Exup%C3%A9ry/dp/0156012197" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/51ifu1aebKL._SX332_BO1,204,203,200_.jpg" alt="">
+					<h4>5. Harry Potter and the Philosopher's Stone</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">The book was first published in the United Kingdom on 26 June 1997.The book has been translated into 80 languages 
+						and has been made into an 8 part series films, the books in themselves have sold more than 500 million copies.
+					</p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Harry-Potter-Philosophers-Childrens-Hardcover/dp/1408855895" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/51MlxNgCsyL._SX308_BO1,204,203,200_.jpg" alt="">
+					<h4>6. And Then There Were None</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">The book was first published in 1939, and since then it has been seen as one of the best thriller novels of all time.
+					</p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Then-There-Were-None/dp/0062073486" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/61KGgzdkCYL._SX338_BO1,204,203,200_.jpg" alt="">
+					<h4>7. The Hobbit</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">This was originally published in 1937  by J. R. R. Tolkien. It was nominated for the Carnegie Medal and 
+						awarded a prize from the New York Herald Tribune for best juvenile fiction. </p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Hobbit-Classic-Hardback-J-Tolkien/dp/0261103288" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/51Dp6aAR4HL._SX357_BO1,204,203,200_.jpg" alt="">
+					<h4>8. Alice's Adventures in Wonderland</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">The book was first published in 1865, and since then it has sold 100 million copies worldwide. The book has 
+						been made into several blockbuster films, animated films, and cartoon series.</p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Alices-Adventures-Wonderland-Lewis-Carroll/dp/0141361344" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/614469ES26L._SX340_BO1,204,203,200_.jpg" alt="">
+					<h4>9. The Lion, The Witch, and the Wardrobe</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">This book was first published in 1950 and has sold 85 million copies worldwide. The book is the first part of 
+						the 7 books' series and has also been made into blockbuster film with the title 'The Chronicles of Narnia: 
+						The Lion, The Witch and the Wardrobe.
+					</p>
+					<div class="book-link">
+						<a href="https://www.amazon.in/Lion-Witch-Wardrobe-Graphic-Chronicles/dp/0064433994" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="item-inner">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/81Ccf2K0axL.jpg" alt="">
+					<h4>10. She: A History of Adventure</h4>
+					<button class="infoBtn">i</button>
+					<p class="infoPara">This book was first published in 1887 and has sold 83 million copies worldwide.
+					</p>
+					<div class="book-link">
+						<a href="https://www.amazon.com/She-History-Adventure-Classic-Reprint/dp/133371114X" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Add Arrows -->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+	</div>
+
+	<div class="topIndian">
+		<h2 style="text-align: center; font-size: 30px; padding-top: 20px; text-decoration: underline; font-family: 'Lobster', cursive;">Top 5 Best Seller Book's in India</h2>
+		<div class="imageLeft">
+			<img src="data:image/webp;base64,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" alt="">
+			<div class="contentRight">
+				<h3>1.) One Arranged Murder</h3>
+				<p>A murder mystery in the backdrop of an arranged marriage will be at the centrestage of bestselling author Chetan Bhagat’s 
+					upcoming fiction book, announced publishing house Westland.
+					The book’s title — One Arranged Murder — and its cover were revealed by the author on Monday. It will be Bhagat’s ninth 
+					novel and 11th book overall. His last release was The Girl in Room 105.</p>
+				<a href="https://www.amazon.in/One-Arranged-Murder-Chetan-Bhagat/dp/1542094135/ref=zg_bs_1890195031_1?_encoding=UTF8&psc=1&refRID=NHESFEQ7134P7YX7X9RE" target="_blank">Order Now</a>
+			</div>
+		</div>
+		<div class="imageRight">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/51H2M2jWmvL._SX311_BO1,204,203,200_.jpg" alt="">
+			<div class="contentLeft">
+				<h3>2.) Great Stories for Children</h3>
+				<p>Great Stories for Children is a collection of some of Ruskin Bond's most delightful children's stories. It stars Toto, 
+					the monkey, who takes a fancy to the narrator's aunt, much to her dismay, a python besotted by his own appearance, a 
+					mischievous ghost who enjoys stirring up the house when things get dull, three young children stranded in a storm on 
+					the Haunted Hilland Ruskin Bond himself, who happens to make the acquaintance of a ghost at a resort late one night.</p>
+				<a href="https://www.amazon.in/Great-Stories-Children-Ruskin-Bond/dp/8129118920/ref=zg_bs_1890195031_2?_encoding=UTF8&psc=1&refRID=NHESFEQ7134P7YX7X9RE" target="_blank">Order Now</a>
+			</div>
+		</div>
+		<div class="imageLeft">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/41ekOc6O1ML._SX311_BO1,204,203,200_.jpg" alt="">
+			<div class="contentRight">
+				<h3>3.) Life is What You Make It</h3>
+				<p> Life Is What You Make It, was published on January 1, 2011 and it turned out to be a national bestseller. It is based on a love story that has been set in India in the 90s. It has been described by the 
+					readers as a book portraying how love, hope and determination can together win over even the destiny. It is a gripping 
+					tale of few significant years of the protagonist’s life</p>
+				<a href="https://www.amazon.in/Life-What-Make-Preeti-Shenoy/dp/9380349300/ref=zg_bs_1890195031_3?_encoding=UTF8&psc=1&refRID=NHESFEQ7134P7YX7X9RE" target="_blank">Order Now</a>
+			</div>
+		</div>
+		<div class="imageRight">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/41s7JOQfEfL._SX326_BO1,204,203,200_.jpg" alt="">
+			<div class="contentLeft">
+				<h3>4.) Love, Hope and Magic</h3>
+				<p>Divided into six chapters, Love, Hope and Magic is about loving deeply and getting broken. It’s about falling into the 
+					darkness and still chasing the light. It’s about letting love find you, trusting the universe and believing in the magic 
+					we carry within ourselves.</p>
+				<a href="https://www.amazon.in/Love-Hope-Magic-Ashish-Bagrecha/dp/9354078877/ref=zg_bs_1890195031_4?_encoding=UTF8&psc=1&refRID=NHESFEQ7134P7YX7X9RE" target="_blank">Order Now</a>
+			</div>
+		</div>
+		<div class="imageLeft">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/41ekOc6O1ML._SX311_BO1,204,203,200_.jpg" alt="">
+			<div class="contentRight">
+				<h3>5.) Legend of Suheldev: The King Who Saved India</h3>
+				<p> Repeated attacks by Mahmud of Ghazni and his barbaric Turkic hordes have weakened India’s northern regions. The invaders 
+					lay waste to vast swathes of the subcontinent—plundering, killing, raping, pillaging. Many of the old Indian kingdoms, 
+					tired and divided, fall to them. Those who do fight, battle with old codes of chivalry, and are unable to stop the savage 
+					Turkic army which repeatedly breaks all rules to win. Then the Turks raid and destroy one of the holiest temples in the 
+					land: the magnificent Lord Shiva temple at Somnath.</p>
+				<a href="https://www.amazon.in/Suheldev-Battle-Bahraich-Amish-Tripathi/dp/9387894037/ref=zg_bs_1890195031_6?_encoding=UTF8&psc=1&refRID=NHESFEQ7134P7YX7X9RE" target="_blank">Order Now</a>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="aboutMe">
+		<ul>
+			<li><img src="./myImage.jpg" alt=""></li>
+			<li>
+				<h2 style="border-bottom: 2px solid black;">About Me</h2>
+				<p>I'm a Second Year IT department student at Army Institute of Technology, Pune. I have a sound knowledge of some 
+					Programming languages such as Python, JavaScript, Java and a little bit of C++. Along with these I'm very comfortable 
+					with HTML and CSS.	
+				</p>
+				<br>
+				<p>Follow me on Social Media -</p>
+				<a href="#"><i class="fab fa-facebook"></a></i>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-github"></i></a>
+			</li>
+		</ul>
+		<h5 style="text-align: center; margin-top: 90px; padding-bottom: 10px;">&copy All copyrights reserved under Delhi High Court</h5>
+	</div>
+	
+	<script src="./new_menu.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+      	navigation: {
+        	nextEl: '.swiper-button-next',
+        	prevEl: '.swiper-button-prev',
+      		},
+    	});
+
+
+		function sliderCheck(){
+			if(screen.width >= 1025){
+				$(".slider").slick({
+				centerMode: true,
+				slidesToShow: 3
+			});
+			}
+		};
+
+		function sliderCheck1(){
+			if(screen.width < 1025){
+				$(".slider").slick({
+				centerMode: true,
+				slidesToShow: 1
+			});
+			}
+		};
+
+		sliderCheck();
+		sliderCheck1();
+	
+
+		document.querySelector('.slick-next').innerText = ">";
+		document.querySelector('.slick-prev').innerText = "<";
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,658 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border-radius: 50%;
+    border: 1px solid rgb(56, 56, 56);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s ease;
+  }
+  
+#myBtn:hover {
+    background-color: #555; 
+}
+
+.logo{
+    position: absolute;
+}
+
+.logo i{
+    font-size: 23px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.navBar{
+    height: 55px;
+    background-color: rgb(120,120,207);
+    border-bottom: 4px solid rgba(51, 50, 50, 0.733);
+}
+
+.options ul{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    float: right;
+}
+
+.options ul li a{
+    padding: 12px 17px;
+    margin: 0 15px;
+    border-radius: 40px;
+    transition: 0.8s ease;
+    color: black;
+    text-decoration: none;
+}
+
+.options ul li a:hover{
+    background-color: rgb(112, 112, 199);
+    box-shadow: 4px 4px 4px rgb(80, 80, 158);
+}
+
+#ham-bars{
+    font-size: 150%;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 15px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+#open{
+    display: none;
+}
+
+#open ul{
+    width: 150px;
+    margin-left: 0px;
+    margin-top: 55px;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+}
+
+#open ul li{
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgb(120,120,207);
+    padding-bottom: 20px;
+}
+
+#open ul li a{
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+
+.card{
+    margin: 0 auto;
+}
+
+.first-background{
+    background-image: url(./background-image1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-background p{
+    border: 2px solid black;
+    width: 550px;
+    height: 270px;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: rgb(212, 212, 212);
+    margin-right: 400px;
+    font-size: 20px;
+    text-align: center;
+    padding: 70px 40px;
+}
+
+#left-quote{
+    margin-right: 400px;
+    margin-top: -35px;
+    font-size: 45px;
+    color: orangered;
+    padding-bottom: 10px;
+}
+
+#right-quote{
+    margin-left: 405px;
+    font-size: 45px;
+    color: orangered;
+    padding-top: 10px;
+}
+
+.book-slider{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/08/15/45/panda-1892023_960_720.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slick-slide img{
+    margin: 0 auto;
+    max-width: 336px;
+    max-height: 225px;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-bottom: 25px;
+}
+
+.item{
+    padding: 15px;
+    outline: none;
+}
+
+.item-inner{
+    padding: 25px;
+}
+
+.item-inner h4{
+    font-size: 25px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px white;
+}
+
+.infoBtn{
+    width: 27px;
+    height: 27px;
+    background-color: rgb(61,56,57);
+    border: 1px solid black;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 10px;
+    float: right;
+    outline: none;
+    display: none;
+}
+
+.slick-slide.slick-current button{
+    display: block;
+}
+
+.infoPara{
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    right: -180px;
+    bottom: 130px;
+    border: 2px solid rgb(235, 130, 44);
+    border-radius: 7px 7px 7px 0px;
+    padding: 20px;
+    width: 230px;
+    background-color: rgb(29, 27, 27);
+    display: none;
+}
+
+.infoPara:hover{
+    display: block;
+}
+
+.infoBtn:hover + .infoPara{
+    display: block;
+}
+
+.book-link{
+    margin-top: 50px;
+}
+
+.book-link a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(130, 177, 230);
+    padding: 13px;
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    outline: none;
+    cursor: default;
+}
+
+.slick-slide.slick-current a{
+    cursor: pointer;
+}
+
+.book-link a:hover{
+    background-color: rgb(109, 147, 190);
+}
+
+.slick-slide{
+    transform: scale(0.8);
+    opacity: 0.3;
+    transition: all 0.7s ease;
+}
+
+.slick-slide.slick-current{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slick-arrow{
+    position: absolute;
+    z-index: 99;
+    bottom: 65%;
+    background: rgb(49, 127, 190);
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 50%;
+    width: 50px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.slick-arrow:hover{
+    transform: translateY(-7px);
+}
+
+.slick-next{
+    left: 90%;
+    
+}
+
+.slick-prev{
+    right: 90%;
+}
+
+.slick-list{
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+}
+
+.imageLeft{
+    margin: 40px 250px 0px 100px;
+    display: flex;
+    padding: 30px 80px;
+    background-image: linear-gradient(to right, gray, white);
+}
+
+.imageLeft img{
+    height: 250px;
+    width: 150px;
+}
+
+.contentRight{
+    margin: 0px 40px 0px 60px;
+}
+
+.contentRight p{
+    padding-top: 20px;
+    padding-right: 60px;
+    margin-bottom: 40px;
+}
+
+.contentRight a{
+    float: right;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(130, 177, 230);
+    padding: 13px;
+    margin-right: 80px;
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    outline: none;
+}
+
+.contentRight a:hover{
+    background-color: rgb(109, 147, 190);
+}
+
+.imageRight{
+    margin: 40px 100px 0px 250px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 80px;
+    background-image: linear-gradient(to left, gray, white);
+}
+
+.imageRight img{
+    height: 250px;
+    width: 150px;
+}
+
+.contentLeft{
+    margin: 0px 40px 0px 60px;
+}
+
+.contentLeft p{
+    padding-top: 20px;
+    padding-right: 60px;
+    margin-bottom: 40px;
+}
+
+.contentLeft a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(130, 177, 230);
+    padding: 13px;
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    outline: none;
+}
+
+.contentLeft a:hover{
+    background-color: rgb(109, 147, 190);
+}
+
+.aboutMe{
+    background-color: rgb(120, 120, 207);
+}
+
+.aboutMe ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.aboutMe ul li{
+    width: 45%;
+    margin-top: 7%;
+}
+
+.aboutMe ul li:first-child{
+    border: 4px solid rgb(230, 230, 230);
+    border-radius: 50%;
+    margin-left: 10%;
+    width: 200px;
+    height: 250px;
+}
+
+.aboutMe ul li:last-child{
+    margin-left: 15%;
+}
+
+.aboutMe ul li img{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    left: -14px;
+    top: -12px;
+}
+
+.aboutMe ul li p{
+    margin-top: 15px;
+    width: 80%;
+}
+
+.aboutMe ul li:last-child a i{
+    font-size: 45px;
+    margin: 40px 100px 0px 0px;
+    color: rgb(49, 49, 49);
+    transition: 0.5s ease;
+}
+
+.aboutMe ul li:last-child a i:hover{
+    transform: translateY(-15px);
+}
+.swiper-container{
+    display: none;
+}
+
+/* ------------- Media Query -------------*/
+
+@media (max-width:320px)  {
+    
+ }
+@media (max-width:481px)  { 
+
+    .book-slider{
+        display: none;
+    }
+    .swiper-container{
+        display: block;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .swiper-slide{
+        text-align: center;
+        font-size: 18px;
+        background: white;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-slide .item-inner{
+        padding: 0;
+    }
+
+    .infoPara{
+        display: block;
+        margin-top: 10px;
+        position: relative;
+        right: -50px;
+        bottom: 0px;
+        border: none;
+        width: 70%;
+        background: none;
+        color: black;
+    }
+
+    .swiper-slide img{
+        height: 180px;
+        width: 130px;
+    }
+    .swiper-slide h4{
+        padding-top: 10px;
+    }
+    .aboutMe ul li:last-child{
+        margin-left: 20px;
+    }
+    .aboutMe ul li a{
+        display: flex;
+        text-decoration: none;
+        padding-left: 45%;
+    }
+ }
+@media (max-width:641px)  {
+
+    #left-quote{
+        display: none;
+    }
+    #right-quote{
+        display: none;
+    }
+    .first-background h1{
+        margin-bottom: 0px;
+    }
+    .first-background p{
+        height: 200px;
+        width: 360px;
+        padding: 30px 20px;
+    }
+    .slick-slide.slick-current .infoPara{
+        padding: 20px 0px;
+    }
+    .book-link{
+        margin-top: 20px;
+    }
+    .options{
+        display: none;
+    }
+    #ham-bars{
+        display: block;
+    }
+    .imageLeft{
+        background-image: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 30px 0px;
+    }
+    .imageLeft img{
+        margin-left: 20px;
+    }
+    .imageLeft a{
+        float: left;
+    }
+    .imageLeft p{
+        padding-right: 0px;
+    }
+    .contentRight{
+        padding-left: 0px;
+        margin: 20px;
+    }
+    .imageRight{
+        background-image: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 30px 0px;
+    }
+    .imageRight img{
+        margin-left: 20px;
+    }
+    .imageRight p{
+        padding-right: 0;
+    }
+    .contentLeft{
+        padding-left: 0px;
+        margin: 20px;
+    }
+    .aboutMe ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutMe ul li:first-child{
+        margin-left: 30%;
+        width: 200px;
+        height: 250px;
+    }
+    .aboutMe ul li:last-child{
+        width: 80%;
+    }
+    .aboutMe ul li p{
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+}
+@media (max-width:961px)  {
+    .first-background{
+        flex-direction: column;
+    }
+
+    .first-background h1{
+        text-shadow: 2px 2px 2px white;
+        margin-bottom: 60px;
+    }
+
+    .first-background p{
+        margin-right: 0;
+        margin-left: 200px;
+        margin-top: 40px;
+    }
+
+    .slick-slide.slick-current .infoBtn{
+        display: none;
+    }
+    .slick-slide.slick-current .infoPara{
+        display: block;
+        margin-top: 20px;
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        border: none;
+        border-radius: 0;
+        padding: 20px 10px;
+        width: 100%;
+        background: none;
+        color: black;
+        font-weight: bold;
+    }
+    .imageLeft{
+        margin-right: 20px;
+        padding: 30px 10px;
+    }
+    .contentRight p{
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .imageRight{
+        margin-right: 20px;
+        padding: 30px 10px;
+    }
+    .contentLeft p{
+        padding-left: 0px;
+        padding-left: 0px;
+    }
+}
+@media (max-width:1025px) { 
+    .first-background p{
+        margin-right: 200px;
+    }
+
+    .slick-slide.slick-current .infoBtn{
+        display: none;
+    }
+    .slick-slide.slick-current .infoPara{
+        display: block;
+        margin-top: 20px;
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        border: none;
+        border-radius: 7px 7px 7px 0px;
+        padding: 20px;
+        width: 70%;
+        background: none;
+        color: black;
+        font-weight: bold;
+    }
+    .imageLeft{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .imageRight{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+ }
